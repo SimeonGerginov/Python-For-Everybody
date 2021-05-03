@@ -16,10 +16,10 @@
 hours = 0.0
 rate_per_hour = 0.0
 
-try :
+try:
     hours = float(input("Enter hours: "))
     rate_per_hour = float(input("Enter rate per hour: "))
-except :
+except:
     print("Error, please enter numeric input")
     quit()
 
@@ -32,7 +32,7 @@ if additional_hours > 0.0:
 
     modified_rate_per_hour = rate_per_hour * 1.5
     gross_pay += additional_hours * modified_rate_per_hour
-else :
+else:
     gross_pay = hours * rate_per_hour
 
 print(gross_pay)

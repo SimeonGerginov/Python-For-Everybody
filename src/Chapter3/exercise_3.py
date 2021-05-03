@@ -27,22 +27,22 @@
 # by Charles R. Severance
 
 score = 0.0
-try :
+try:
     score = float(input("Enter score: "))
-except :
+except:
     print("Error, please enter numeric input")
     quit()
 
-if score > 1.0 :
+if score > 1.0:
     print("Bad score")
-else :
-    if score >= 0.9 :
+else:
+    if score >= 0.9:
         print("A")
-    elif score >= 0.8 :
+    elif score >= 0.8:
         print("B")
-    elif score >= 0.7 :
+    elif score >= 0.7:
         print("C")
-    elif score >= 0.6 :
+    elif score >= 0.6:
         print("D")
-    else :
+    else:
         print("F")

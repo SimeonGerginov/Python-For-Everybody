@@ -26,29 +26,29 @@
 # Python for Everybody: Exploring Data Using Python 3
 # by Charles R. Severance
 
-def computegrade(score) :
+def computegrade(score):
     grade = ""
 
-    if score > 1.0 :
+    if score > 1.0:
         grade = "Bad score"
-    else :
-        if score >= 0.9 :
+    else:
+        if score >= 0.9:
             grade = "A"
-        elif score >= 0.8 :
+        elif score >= 0.8:
             grade = "B"
-        elif score >= 0.7 :
+        elif score >= 0.7:
             grade = "C"
-        elif score >= 0.6 :
+        elif score >= 0.6:
             grade = "D"
-        else :
+        else:
             grade = "F"
 
     return grade
 
 score = 0.0
-try :
+try:
     score = float(input("Enter score: "))
-except :
+except:
     print("Error, please enter numeric input")
     quit()
 

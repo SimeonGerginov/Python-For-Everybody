@@ -8,7 +8,7 @@
 # Python for Everybody: Exploring Data Using Python 3
 # by Charles R. Severance
 
-def computepay(hours, rate) :
+def computepay(hours, rate):
     additional_hours = hours - 40.0
     gross_pay = 0.0
 
@@ -18,7 +18,7 @@ def computepay(hours, rate) :
 
         modified_rate_per_hour = rate * 1.5
         gross_pay += additional_hours * modified_rate_per_hour
-    else :
+    else:
         gross_pay = hours * rate
 
     return gross_pay
@@ -26,10 +26,10 @@ def computepay(hours, rate) :
 hours = 0.0
 rate_per_hour = 0.0
 
-try :
+try:
     hours = float(input("Enter hours: "))
     rate_per_hour = float(input("Enter rate per hour: "))
-except :
+except:
     print("Error, please enter numeric input")
     quit()
 

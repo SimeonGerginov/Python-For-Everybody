@@ -20,7 +20,7 @@ if additional_hours > 0:
 
     modified_rate_per_hour = rate_per_hour * 1.5
     gross_pay += additional_hours * modified_rate_per_hour
-else :
+else:
     gross_pay = hours * rate_per_hour
 
 print(gross_pay)
